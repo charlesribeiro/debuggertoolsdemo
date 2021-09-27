@@ -8,3 +8,16 @@ Just make sure to correctly edit the launch.json file inside the .vscode directo
 
 ## Jest Runner
 This will help debug our Jest tests easily straight from the Visual Studio Code IDE (i.e. including breakpoints). [https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner]
+
+# How to start debugging
+## Plain console.log, console.warn statements
+
+There are some things to have in mind when trying to debug a code. The first step is usually trying to reproduce the bug.
+Once it has been reproduced, the most basic way is to do a quick debug is throught adding print statements (equivalent to console.log or alert in javascript) and checking their output in the browser developer tools. Those outputs might tell you if a certain function has been called, check some variables values etc.
+
+[https://developer.mozilla.org/en-US/docs/Web/API/Console/log]
+
+This surely will help to some extent in finding some bugs, however, things can quickly get confusing and the output might get very hard to read. Another issue is that, as a general rule, console statements should do not be done in excess (or at all for most production code), as they have a footprint in performance.
+
+## Dev tools
+
