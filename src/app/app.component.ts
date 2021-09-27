@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'debuggertoolsdemo';
 
-  constructor(){
+  constructor() {
+    debugger;
+  }
+  dateEnter() {
+    debugger;
+  }
+  handleChange(event: any) {
     debugger;
   }
 }
