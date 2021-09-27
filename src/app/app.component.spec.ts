@@ -1,4 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
+import { MatSlider, MatSliderModule } from '@angular/material/slider';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
@@ -6,7 +7,8 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        MatSliderModule,
       ],
       declarations: [
         AppComponent
