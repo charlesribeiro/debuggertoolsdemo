@@ -21,3 +21,7 @@ This surely will help to some extent in finding some bugs, however, things can q
 
 ## Dev tools
 
+
+## Google Chrome Dev Tools
+
+Check this tutorial [https://developer.chrome.com/docs/devtools/css/].
