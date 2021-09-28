@@ -25,3 +25,9 @@ This surely will help to some extent in finding some bugs, however, things can q
 ## Google Chrome Dev Tools
 
 Check this tutorial [https://developer.chrome.com/docs/devtools/css/].
+
+[https://developer.chrome.com/docs/devtools/css/#view]
+[https://developer.chrome.com/docs/devtools/css/#declarations]
+[https://developer.chrome.com/docs/devtools/css/#classes]
+[https://developer.chrome.com/docs/devtools/css/#pseudostates]
+[https://developer.chrome.com/docs/devtools/css/#box-model]
