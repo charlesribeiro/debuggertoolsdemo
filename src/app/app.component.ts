@@ -11,10 +11,4 @@ export class AppComponent {
   constructor() {
     debugger;
   }
-  dateEnter() {
-    debugger;
-  }
-  handleChange(event: any) {
-    debugger;
-  }
 }

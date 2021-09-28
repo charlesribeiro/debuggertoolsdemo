@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-calendar-card',
   templateUrl: './calendar-card.component.html',
   styleUrls: ['./calendar-card.component.scss']
 })
-export class CalendarCardComponent implements OnInit {
+export class CalendarCardComponent {
 
-  constructor() { }
+  customStartDate = new Date(1993, 15, 1);
 
-  ngOnInit(): void {
-  }
+  calendarEvents: string[] = [];
 
-  dateEnter() {
+  addDateInputEvent(event: MatDatepickerInputEvent<Date>) {
     debugger;
+    this.calendarEvents.push(`addDate ${event.value}`);
   }
-  handleChange(event: any) {
+  addDateChangeEvent(event: MatDatepickerInputEvent<Date>) {
     debugger;
+    this.calendarEvents.push(`addDateChangeEvent ${event.value}`);
   }
 }

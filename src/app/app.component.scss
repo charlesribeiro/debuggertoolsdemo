@@ -1,0 +1,18 @@
+.toolbar {
+  display: flex;
+  position: absolute;
+  background-color: #e2af23;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+.content {
+  display: flex;
+  margin: 96px auto 32px;
+  padding: 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}

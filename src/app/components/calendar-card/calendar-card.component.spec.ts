@@ -1,8 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatSliderModule } from '@angular/material/slider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from 'src/app/material-module.module';
 
 import { CalendarCardComponent } from './calendar-card.component';
 
@@ -13,9 +12,8 @@ describe('CalendarCardComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        MatSliderModule,
-        MatNativeDateModule,
-        MatDatepickerModule,
+        BrowserAnimationsModule,
+        MaterialModule,
       ],
       declarations: [ CalendarCardComponent ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
