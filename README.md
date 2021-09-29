@@ -66,3 +66,8 @@ Check this tutorial [this tutorial for css](https://developer.chrome.com/docs/de
 
 You can check the file sources and add breakpoints straight from the sources tab. You can also long click the 'Resume script execution button', it will show additional options for debugging the current file.
 Make sure to explore features like conditional breakpoints, restart frame etc.
+
+### Application tab
+
+Watch out for the cookies, local storage and session storage sections
+[https://stackoverflow.com/questions/19867599/what-is-the-difference-between-localstorage-sessionstorage-session-and-cookies]

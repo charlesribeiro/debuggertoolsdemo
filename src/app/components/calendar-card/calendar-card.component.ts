@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-calendar-card',
@@ -12,11 +13,18 @@ export class CalendarCardComponent {
 
   calendarEvents: string[] = [];
 
-  constructor(){
+  myCookie: string;
+
+  constructor( private cookieService: CookieService ){
     console.warn("just a test warning");
     console.error("just a test error");
 
     this.timeFunction();
+
+    this.cookieService.set('first test cookie', 'My Cookie');
+    this.myCookie = this.cookieService.get('first test cookie');
+
+    debugger;
   }
 
   addDateInputEvent(event: MatDatepickerInputEvent<Date>) {

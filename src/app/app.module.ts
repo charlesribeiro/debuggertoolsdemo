@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalendarCardComponent } from './components/calendar-card/calendar-card.component';
 import { MaterialModule } from './material-module.module';
+import { CookieService } from 'ngx-cookie-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import { MaterialModule } from './material-module.module';
     BrowserAnimationsModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [ CookieService],
   bootstrap: [AppComponent, CalendarCardComponent],
   exports: [CalendarCardComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
