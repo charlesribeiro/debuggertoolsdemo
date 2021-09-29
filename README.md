@@ -27,7 +27,7 @@ This will help debug our Jest tests easily straight from the Visual Studio Code 
 
 There are some things to have in mind when trying to debug a code. The first step is usually trying to reproduce the bug.
 
-Once it has been reproduced, the most basic way is to do a quick debug is throught adding print statements (equivalent to console.log or alert in javascript) and checking their output in the browser developer tools. Those outputs might tell you if a certain function has been called, check some variables values etc.
+Once it has been reproduced, the most basic way is to do a quick debug is throught adding print statements (equivalent to console.log [https://developer.mozilla.org/en-US/docs/Web/API/Console] or alert in javascript) and checking their output in the browser developer tools. Those outputs might tell you if a certain function has been called, check some variables values etc.
 
   
 

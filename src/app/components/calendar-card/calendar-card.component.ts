@@ -8,9 +8,16 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 })
 export class CalendarCardComponent {
 
-  customStartDate = new Date(1993, 15, 1);
+  customStartDate = new Date(1993, 10, 1);
 
   calendarEvents: string[] = [];
+
+  constructor(){
+    console.warn("just a test warning");
+    console.error("just a test error");
+
+    this.timeFunction();
+  }
 
   addDateInputEvent(event: MatDatepickerInputEvent<Date>) {
     debugger;
@@ -19,5 +26,16 @@ export class CalendarCardComponent {
   addDateChangeEvent(event: MatDatepickerInputEvent<Date>) {
     debugger;
     this.calendarEvents.push(`addDateChangeEvent ${event.value}`);
+  }
+
+  timeFunction(){
+    console.time();
+
+    for (let i = 0; i < 20; i++) {
+      console.log("doing absolutely nothing here");
+    }
+    console.timeEnd();
+
+    debugger;
   }
 }
