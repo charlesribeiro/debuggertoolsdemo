@@ -63,3 +63,6 @@ Check this tutorial [this tutorial for css](https://developer.chrome.com/docs/de
 - [https://developer.chrome.com/docs/devtools/css/#box-model]
 
 ### Sources
+
+You can check the file sources and add breakpoints straight from the sources tab. You can also long click the 'Resume script execution button', it will show additional options for debugging the current file.
+Make sure to explore features like conditional breakpoints, restart frame etc.

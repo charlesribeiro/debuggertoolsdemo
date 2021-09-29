@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'debuggertoolsdemo';
 
   constructor() {
+    // alert("Hi"); 
     debugger;
   }
 }
